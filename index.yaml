@@ -2,6 +2,14 @@ apiVersion: v1
 entries:
   configmaps:
   - apiVersion: v1
+    created: "2023-10-10T22:09:01.477246487Z"
+    description: A Helm chart for Kubernetes ConfigMaps
+    digest: 66003aafa83723e835349b05a4e489c970228d5bb78c4cbdbb7a2edc59bd6908
+    name: configmaps
+    urls:
+    - configmaps-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v1
     created: "2023-10-10T21:56:48.902024394Z"
     description: A Helm chart for Kubernetes ConfigMaps
     digest: d41ec7a9e731e1c448bead082cee94406c326c14fc67988f25783284bdb0d89a
@@ -18,4 +26,4 @@ entries:
     urls:
     - secrets-1.0.0.tgz
     version: 1.0.0
-generated: "2023-10-10T21:58:30.81729396Z"
+generated: "2023-10-10T22:09:01.697389988Z"
