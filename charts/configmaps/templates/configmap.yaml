@@ -1,0 +1,22 @@
+{{- range $key, $value := .Values.configMap }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ $key }}
+  {{- if $value.namespace }}
+  namespace: {{ $value.namespace }}
+  {{- end }}
+  labels:
+    {{- include "app.labels" $ | nindent 4 }}
+    {{- if $value.labels }}
+    {{- toYaml $value.labels | trim | nindent 4 }}
+    {{- end }}
+  annotations:
+    {{- include "app.annotations" $ | nindent 4 }}
+    {{- if $value.annotations }}
+    {{- toYaml $value.annotations | trim | nindent 4 }}
+    {{- end }}
+data:
+  {{- toYaml $value.data | trim | nindent 2 }}
+{{- end }}
