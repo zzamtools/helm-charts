@@ -11,6 +11,9 @@ jobs:
     container:
       image: quay.io/helmpack/chart-releaser:v1.6.0
       options: --user 1001
+    defaults:
+      run:
+        working-directory: ./charts
     steps:
     - name: Check out repository code
       uses: actions/checkout@v4
@@ -21,9 +24,6 @@ jobs:
       run: |
           git config --global user.name "zzamzam"
           git config --global user.email "dangeron@gmail.com"
-
-    - name: Set charts folder as current workdir
-      run: cd charts
 
     - name: Package charts
       run: ls -d */ | xargs cr package
