@@ -9,4 +9,13 @@ entries:
     urls:
     - configmaps-1.0.0.tgz
     version: 1.0.0
-generated: "2023-10-10T21:56:49.08256564Z"
+  secrets:
+  - apiVersion: v1
+    created: "2023-10-10T21:58:30.81728746Z"
+    description: A Helm Chart for Kubernetes Secrets
+    digest: 990eed1a336a8327e37585f5d69572b00528918c0780d26d01cc856891676ed0
+    name: secrets
+    urls:
+    - secrets-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-10-10T21:58:30.81729396Z"
