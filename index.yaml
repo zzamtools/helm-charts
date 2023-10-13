@@ -44,4 +44,13 @@ entries:
     urls:
     - secrets-1.0.0.tgz
     version: 1.0.0
-generated: "2023-10-12T08:57:57.501616379Z"
+  simple-python-web-app:
+  - apiVersion: v1
+    created: "2023-10-13T08:13:44.154812408Z"
+    description: Simple Python Web App
+    digest: 78d398f3beda2ae6a09f6615ee260826c4350e6b7c83586a579ea99e7862b7b4
+    name: simple-python-web-app
+    urls:
+    - simple-python-web-app-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-10-13T08:13:44.154819608Z"
