@@ -1,0 +1,33 @@
+image:
+  repository: ghcr.io/zzamtools/simple-python-web-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+replicas: 1
+
+env:
+  CLIENT_ID: "DefaultID"
+  CLIENT_SECRET: "DefaultSecret"
+envSecrets: {}
+
+extraDeploymentSpec: {}
+extraPodSpec: {}
+
+extraContainerSpec:
+  ports:
+  - name: http
+    containerPort: 8080
+
+service:
+  enabled: true
+  spec:
+    type: ClusterIP
+    ports:
+    - name: http
+      port: 8080
+      targetPort: http
+
+ingress:
+  enabled: false
+  annotations: {}
+  spec: {}

@@ -1,0 +1,4 @@
+apiVersion: v1
+description: Simple Python Web App
+name: simple-python-web-app
+version: 1.0.0
