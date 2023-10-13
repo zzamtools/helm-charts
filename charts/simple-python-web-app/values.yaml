@@ -5,9 +5,7 @@ image:
 
 replicas: 1
 
-env:
-  CLIENT_ID: "DefaultID"
-  CLIENT_SECRET: "DefaultSecret"
+env: {}
 envSecrets: {}
 
 extraDeploymentSpec: {}
