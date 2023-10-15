@@ -35,15 +35,6 @@ entries:
     urls:
     - ingresses-1.0.0.tgz
     version: 1.0.0
-  issuers:
-  - apiVersion: v1
-    created: "2023-10-12T08:57:57.349149146Z"
-    description: A Helm Chart for Kubernetes Issuers/ClusterIssuers
-    digest: 94e7f80523b5b7e8f93b6f6602ff3e839b87cd6f29035c632599f2788b56e1b4
-    name: issuers
-    urls:
-    - issuers-1.0.0.tgz
-    version: 1.0.0
   secrets:
   - apiVersion: v1
     created: "2023-10-10T21:58:30.81728746Z"
