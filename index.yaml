@@ -1,5 +1,14 @@
 apiVersion: v1
 entries:
+  base-deployment:
+  - apiVersion: v1
+    created: "2023-10-15T13:00:51.627015251Z"
+    description: A Helm Chart for Kubernetes Deployment
+    digest: db2d60a97ad085afc0e051e7ba7c4e7145686a1127780d1da595a72fd1e585b6
+    name: base-deployment
+    urls:
+    - base-deployment-1.0.0.tgz
+    version: 1.0.0
   configmaps:
   - apiVersion: v1
     created: "2023-10-10T22:09:01.477246487Z"
@@ -53,4 +62,4 @@ entries:
     urls:
     - simple-python-web-app-1.0.0.tgz
     version: 1.0.0
-generated: "2023-10-13T08:13:44.154819608Z"
+generated: "2023-10-15T13:00:52.319668914Z"
