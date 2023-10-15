@@ -39,6 +39,7 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end -}}
 
+{{/*  Manage the annotations for each entity  */}}
 {{- define "app.annotations" -}}
 helm.sh/chart: {{ template "app.chart" . }}
 {{- end -}}
