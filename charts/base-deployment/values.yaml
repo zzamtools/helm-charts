@@ -1,0 +1,27 @@
+image:
+  repository: gcr.io/distroless/base-debian12
+  tag: nonroot
+  pullPolicy: IfNotPresent
+
+replicas: 1
+
+env: {}
+envSecrets: {}
+
+extraDeploymentSpec: {}
+extraPodSpec: {}
+extraContainerSpec: {}
+
+service:
+  enabled: false
+  labels: {}
+  spec: {}
+
+ingress:
+  enabled: false
+  annotations: {}
+  spec: {}
+
+pvc:
+  enabled: false
+  spec: {}

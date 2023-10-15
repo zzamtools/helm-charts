@@ -1,0 +1,18 @@
+{{- if (.Values.service.enabled) }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "app.fullname" . }}
+  labels:
+    {{- include "app.labels" . | nindent 4 }}
+    {{- if .Values.service.labels }}
+    {{- toYaml .Values.service.labels | trim | nindent 4 }}
+    {{- end }}
+spec:
+  {{- if .Values.service.spec }}
+  {{- toYaml .Values.service.spec | trim | nindent 2 }}
+  {{- end }}
+  selector:
+    {{- include "app.labels" . | nindent 4 }}
+{{- end }}
