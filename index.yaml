@@ -35,6 +35,15 @@ entries:
     urls:
     - ingresses-1.0.0.tgz
     version: 1.0.0
+  issuers:
+  - apiVersion: v1
+    created: "2023-10-15T13:13:51.959972871Z"
+    description: A Helm Chart for Kubernetes Issuers/ClusterIssuers
+    digest: aa2dbf1d79e55ae6ab1a87005fa0c06cc641dad2112bfc9acde6bd5a68707dcf
+    name: issuers
+    urls:
+    - issuers-1.0.0.tgz
+    version: 1.0.0
   secrets:
   - apiVersion: v1
     created: "2023-10-10T21:58:30.81728746Z"
@@ -53,4 +62,4 @@ entries:
     urls:
     - simple-python-web-app-1.0.0.tgz
     version: 1.0.0
-generated: "2023-10-15T13:00:52.319668914Z"
+generated: "2023-10-15T13:13:52.328937331Z"
