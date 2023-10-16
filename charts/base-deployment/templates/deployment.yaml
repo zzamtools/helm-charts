@@ -16,6 +16,7 @@ spec:
       labels:
         {{- include "app.labels" . | nindent 8 }}
       annotations:
+        checksum/secret: {{ include (print $.Template.BasePath "/secret.yaml") . | sha256sum }}
         {{- include "app.annotations" . | nindent 8 }}
     # podSpec
     spec:
